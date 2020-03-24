@@ -3,7 +3,7 @@ MAINTAINER GGMethos <ggmethos@autistici.org>
 
 USER root
 
-RUN echo "IRCD Installation Starting"
+#IRCD
 
 RUN apk upgrade --update-cache --available
 
@@ -64,6 +64,8 @@ RUN cp /home/unreal/unrealircd.conf /home/unreal/unrealircd/conf/
 EXPOSE 6667
 
 EXPOSE 6697
+
+EXPOSE 7000
 
 #CMD ["./home/unreal/unrealirc/bin/unrealircd", "start", "-F"]
 
